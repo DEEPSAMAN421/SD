@@ -1,0 +1,138 @@
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    
+    /* Default Orange Theme (can be overridden) */
+    --primary: 32 100% 50%; 
+    --primary-foreground: 210 40% 98%;
+    --ring: 32 100% 50%;
+
+    /* Specific Theme Colors */
+    --th-primary: 217 91% 60%; /* Blue for Town Hall */
+    --th-primary-foreground: 210 40% 98%;
+    --th-ring: 217 91% 60%;
+
+    --bh-primary: 142 76% 36%; /* Green for Builder Hall */
+    --bh-primary-foreground: 210 40% 98%;
+    --bh-ring: 142 76% 36%;
+
+    --hero-primary: 262 80% 58%; /* Purple for Hero Loadout */
+    --hero-primary-foreground: 210 40% 98%;
+    --hero-ring: 262 80% 58%;
+    
+    --attack-primary: 45 100% 49%; /* Yellow for Attack Strategy */
+    --attack-primary-foreground: 222.2 47.4% 11.2%; /* Darker text for yellow */
+    --attack-ring: 45 100% 49%;
+
+    --planner-primary: 221 83% 53%; /* Indigo for Planner */
+    --planner-primary-foreground: 210 40% 98%;
+    --planner-ring: 221 83% 53%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%; 
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --radius: 0.5rem;
+
+    --slogan-color-1: hsl(var(--primary));
+    --slogan-color-2: 200 80% 55%; 
+    --slogan-color-3: 120 70% 45%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 32 100% 50%; 
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --ring: 32 100% 50%;
+
+    --th-primary: 217 80% 65%;
+    --th-primary-foreground: 222.2 47.4% 11.2%;
+    --th-ring: 217 80% 65%;
+
+    --bh-primary: 142 65% 45%;
+    --bh-primary-foreground: 210 40% 98%;
+    --bh-ring: 142 65% 45%;
+
+    --hero-primary: 262 70% 65%;
+    --hero-primary-foreground: 210 40% 98%;
+    --hero-ring: 262 70% 65%;
+
+    --attack-primary: 45 90% 55%;
+    --attack-primary-foreground: 222.2 47.4% 11.2%;
+    --attack-ring: 45 90% 55%;
+
+    --planner-primary: 221 70% 60%;
+    --planner-primary-foreground: 210 40% 98%;
+    --planner-ring: 221 70% 60%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 170 75% 40%; 
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    
+    --slogan-color-1: hsl(var(--primary));
+    --slogan-color-2: 200 70% 65%; 
+    --slogan-color-3: 120 60% 55%;
+  }
+
+  .theme-default {
+    --primary: 32 100% 50%; /* Default Orange */
+    --primary-foreground: 210 40% 98%;
+    --ring: 32 100% 50%;
+  }
+  .dark .theme-default {
+    --primary: 32 100% 50%; 
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --ring: 32 100% 50%;
+  }
+
+  .theme-th {
+    --primary: var(--th-primary);
+    --primary-foreground: var(--th-primary-foreground);
+    --ring: var(--th-ring);
+  }
+  .theme-bh {
+    --primary: var(--bh-primary);
+    --primary-foreground: var(--bh-primary-foreground);
+    --ring: var(--bh-ring);
+  }
+  .theme-hero {
+    --primary: var(--hero-primary);
+    --primary-foreground: var(--hero-primary-foreground);
+    --ring: var(--hero-ring);
+  }
+  .theme-attack {
+    --primary: var(--attack-primary);
+    --primary-foreground: var(--attack-primary-foreground);
+    --ring: var(--attack-ring);
+  }
+  .theme-planner {
+    --primary: var(--planner-primary);
+    --primary-foreground: var(--planner-primary-foreground);
+    --ring: var(--planner-ring);
+  }
+}
